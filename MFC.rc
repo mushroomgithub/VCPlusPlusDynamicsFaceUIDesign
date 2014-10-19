@@ -1,0 +1,290 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MFC.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MFC.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MFC"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MFC 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MFC_DIALOG DIALOGEX 0, 0, 957, 465
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",WS_BORDER | WS_TABSTOP,
+                    445,176,143,211,WS_EX_TRANSPARENT
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,619,185,116,16
+    GROUPBOX        "滑块测试",IDC_STATIC,604,171,162,40,0,WS_EX_TRANSPARENT
+    GROUPBOX        "所属院系",IDC_STATIC,217,153,190,91,0,WS_EX_TRANSPARENT
+    CONTROL         "物理学院",IDC_WULI_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,237,173,48,10,WS_EX_TRANSPARENT
+    CONTROL         "信息学院",IDC_IT_RADIO,"Button",BS_AUTORADIOBUTTON,237,
+                    195,48,10,WS_EX_TRANSPARENT
+    CONTROL         "电气学院",IDC_DIANQI_RADIO,"Button",BS_AUTORADIOBUTTON,
+                    237,217,48,10,WS_EX_TRANSPARENT
+    GROUPBOX        "选课信息",IDC_STATIC,17,152,195,92,0,WS_EX_TRANSPARENT
+    CONTROL         "模糊数学",IDC_CK_SHUXUE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,179,48,10,WS_EX_TRANSPARENT
+    CONTROL         "分布式系统",IDC_CK_DISTRIBUTE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,181,56,10,WS_EX_TRANSPARENT
+    CONTROL         "英语",IDC_CK_ENGLISH,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,211,32,10,WS_EX_TRANSPARENT
+    CONTROL         "计算机网络",IDC_CK_NETWORK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,213,56,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "确定",IDC_BTN_OK,481,411,57,21
+    LISTBOX         IDC_LIST,611,240,159,146,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP,WS_EX_TRANSPARENT
+    LTEXT           "列表框选择信息显示：",IDC_STATIC,608,220,94,15,0,
+                    WS_EX_TRANSPARENT
+    LTEXT           "树状控件测试：",IDC_STATIC,445,154,112,17,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,18,271,392,115,WS_EX_TRANSPARENT
+    LTEXT           "列表控件的测试：",IDC_STATIC,17,251,90,16,0,
+                    WS_EX_TRANSPARENT
+    PUSHBUTTON      "取消",IDC_BTN_CANCEL,656,409,57,21
+    EDITTEXT        IDC_EDIT_PATH,314,44,328,26,ES_AUTOHSCROLL
+    LTEXT           "目录:",IDC_STATIC,279,46,28,24,0,WS_EX_TRANSPARENT
+    CONTROL         154,IDC_PICTURE,"Static",SS_BITMAP | SS_REALSIZEIMAGE | 
+                    SS_SUNKEN | WS_BORDER,183,45,89,89,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_SHOCKWAVEFLASH,
+                    "{D27CDB6E-AE6D-11CF-96B8-444553540000}",WS_TABSTOP,782,
+                    237,160,151
+    PUSHBUTTON      "选择Flash文件",IDC_OPENSWF,786,411,53,21
+    PUSHBUTTON      "关闭Flash",IDC_CLOSESWF,909,411,41,21
+    PUSHBUTTON      "播放Flash",IDC_PLAYSWF2,853,411,41,21
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MFC Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MFC\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MFC.EXE\0"
+            VALUE "ProductName", "MFC 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MFC_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 950
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 458
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\网络控制台.bmp"
+IDB_EXIT2               BITMAP  DISCARDABLE     "res\\关闭2.bmp"
+IDB_EXIT1               BITMAP  DISCARDABLE     "res\\关闭1.bmp"
+IDB_HELP2               BITMAP  DISCARDABLE     "res\\关于2.bmp"
+IDB_HELP1               BITMAP  DISCARDABLE     "res\\关于1.bmp"
+IDB_MINIMIZE2           BITMAP  DISCARDABLE     "res\\最小化2.bmp"
+IDB_MINIMIZE1           BITMAP  DISCARDABLE     "res\\最小化1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\200805291838081499229.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MFC_DIALOG DLGINIT
+BEGIN
+    IDC_SHOCKWAVEFLASH, 0x376, 312, 0
+0x0000, 0x0000, 0x5567, 0x5566, 0x0900, 0x0000, 0x18ce, 0x0000, 0x1776, 
+0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 
+0x0000, 0x0000, 0x0008, 0x000e, 0x0000, 0x0057, 0x0069, 0x006e, 0x0064, 
+0x006f, 0x0077, 0x0000, 0x0008, 0x0006, 0x0000, 0x002d, 0x0031, 0x0000, 
+0x0008, 0x0006, 0x0000, 0x002d, 0x0031, 0x0000, 0x0008, 0x000a, 0x0000, 
+0x0048, 0x0069, 0x0067, 0x0068, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x0008, 0x0006, 0x0000, 0x002d, 0x0031, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0008, 0x0002, 0x0000, 0x0000, 0x0008, 0x0010, 0x0000, 0x0053, 0x0068, 
+0x006f, 0x0077, 0x0041, 0x006c, 0x006c, 0x0000, 0x0008, 0x0004, 0x0000, 
+0x0030, 0x0000, 0x0008, 0x0004, 0x0000, 0x0030, 0x0000, 0x0008, 0x0002, 
+0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 0x0002, 0x0000, 0x0000, 
+0x000d, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0008, 0x0004, 0x0000, 0x0031, 0x0000, 0x0008, 0x0004, 0x0000, 0x0030, 
+0x0000, 0x0008, 0x0000, 0x0000, 0x0008, 0x0004, 0x0000, 0x0030, 0x0000, 
+0x0008, 0x0008, 0x0000, 0x0061, 0x006c, 0x006c, 0x0000, 0x0008, 0x000c, 
+0x0000, 0x0066, 0x0061, 0x006c, 0x0073, 0x0065, 0x0000, 0x0008, 0x000c, 
+0x0000, 0x0066, 0x0061, 0x006c, 0x0073, 0x0065, 0x0000, 0x0008, 0x0004, 
+0x0000, 0x0030, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MFC(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MFC.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
